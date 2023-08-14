@@ -8,18 +8,18 @@ repository.workspace = true
 
 [dependencies]
 # third-party dependencies
-log = { workspace = true }
+log = { version = "0.4.17", default-features = false }
 
 # Substrate dependencies
-frame-support = { workspace = true }
-sp-core = { workspace = true }
-sp-runtime = { workspace = true }
-sp-std = { workspace = true }
+frame-support = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.41" }
+sp-core = { version = "7.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.41" }
+sp-runtime = { version = "7.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.41" }
+sp-std = { version = "5.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.41" }
 
 # XCM dependencies
-xcm = { workspace = true }
-xcm-builder = { workspace = true }
-xcm-executor = { workspace = true }
+xcm = { git = "https://github.com/paritytech/polkadot", default-features = false, branch = "release-v0.9.41" }
+xcm-builder = { git = "https://github.com/paritytech/polkadot", default-features = false, branch = "release-v0.9.41" }
+xcm-executor = { git = "https://github.com/paritytech/polkadot", default-features = false, branch = "release-v0.9.41" }
 
 # Astar pallets
 pallet-xc-asset-config = { workspace = true }
